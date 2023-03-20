@@ -51,7 +51,7 @@ namespace KlassrumsProjekt
             this.button1.Padding = new System.Windows.Forms.Padding(10);
             this.button1.Size = new System.Drawing.Size(699, 138);
             this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
+            this.button1.Text = "player 2";
             this.button1.UseVisualStyleBackColor = false;
             // 
             // button2
@@ -63,7 +63,7 @@ namespace KlassrumsProjekt
             this.button2.Padding = new System.Windows.Forms.Padding(10);
             this.button2.Size = new System.Drawing.Size(699, 138);
             this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
+            this.button2.Text = "Player 1 ";
             this.button2.UseVisualStyleBackColor = false;
             // 
             // button3
