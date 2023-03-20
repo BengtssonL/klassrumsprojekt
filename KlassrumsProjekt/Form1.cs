@@ -11,36 +11,32 @@ using System.Windows.Forms;
 namespace KlassrumsProjekt
 {
     public partial class Form1 : Form
-    {
+    { 
+        //skapar en random variabel som senare ska användas 
+        Random rnd = new Random();
+
         public Form1()
         {
             InitializeComponent();
 
         }
-
-        private void eventLog1_EntryWritten(object sender, System.Diagnostics.EntryWrittenEventArgs e)
+        //funktionen när man trycker på knapp 3 eller fight knappen. 
+        private void Button3_Click(object sender, EventArgs e)
         {
+           
+            int random = rnd.Next(0, 2); 
+            int attack = rnd.Next(0, 11);
 
+            //randomiserar vilken knapp som ska minskas 
+            if (random  == 1)
+            {
+                button1.Size = new Size(button1.Width - attack, button1.Height);
+            }
+            else 
+            {
+                button2.Size = new Size(button2.Width - attack, button2.Height);
+            }
         }
-       
-
-        private void Button1_Click(object sender, EventArgs e)
-        {
-            Random rnd = new Random();
-            int a = rnd.Next(0, 10);
-
-            button1.Size = new Size(button1.Width - a, button1.Height);
-              
-
-        }
-        private void Button2_Click(object sender, EventArgs e)
-        {
-            Random rnd = new Random();
-            int a = rnd.Next(0, 10);
-
-            button2.Size = new Size(button2.Width - a, button2.Height);
-
-
-        }
+        
     }
 }
